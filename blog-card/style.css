@@ -1,0 +1,138 @@
+:root {
+	--yellow: hsl(47, 88%, 63%);
+	---white: hsl(0, 0%, 100%);
+	--gray-light: hsl(0, 0%, 42%);
+	--gray: hsl(0, 0%, 7%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Figtree', sans-serif;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: var(--yellow);
+}
+
+.card {
+	width: 327px;
+	min-width: 327px;
+	max-width: 327px;
+	background-color: var(---white);
+	border-radius: 20px;
+	border: 1px solid black;
+	padding: 2.2rem 2.2rem;
+	box-shadow: 8px 8px 0 0px;
+}
+
+.card-img img {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 2.4rem;
+}
+
+.card-info {
+	color: var(--gray);
+}
+
+.card-info span {
+	display: inline-block;
+	font-weight: 800;
+	background-color: var(--yellow);
+	padding: 0.6rem 1.3rem;
+	border-radius: 5px;
+}
+
+.data {
+	font-weight: 500;
+	margin: 1.5rem 0;
+}
+
+.card-title {
+	text-decoration: none;
+	color: var(--gray);
+	font-weight: bold;
+	font-size: 1rem;
+   
+	transition: color 0.3s ease;
+}
+
+.card-title:hover {
+	color: var(--yellow);
+}
+
+.card-text {
+	font-size: 1.4rem;
+	color: var(--gray-light);
+	line-height: 2.2rem;
+	padding-right: .8rem;
+	font-weight: 500;
+    margin: 1.5rem 0;
+}
+
+.name {
+	display: flex;
+	align-items: center;
+}
+
+.name img {
+	width: 3.3rem;
+	height: 3.3rem;
+	margin-right: 1.5rem;
+}
+
+.user {
+	font-weight: 800;
+	color: var(--gray);
+}
+
+@media (min-width: 992px) {
+	.card {
+		width: 384px;
+		max-width: 384px;
+    
+	}
+    .card-info span {
+        font-size: 1.4rem;
+       
+    }
+    
+    .data {
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+    
+    .card-title h1 {
+       
+        font-weight: 800;
+        font-size: 2.4rem;
+       
+    }
+    
+    
+    
+    .card-text {
+        font-size: 1.6rem;
+       
+        line-height: 2.3rem;
+       
+       
+       margin-bottom: 2rem;
+    }
+    
+    .name {
+        display: flex;
+        align-items: center;
+    }
+}
